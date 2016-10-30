@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="messageCell" id="w8b-ZY-Xgp" customClass="FwwMessageViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="w8b-ZY-Xgp" id="50Y-lo-mbr">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="J7c-Qc-eVI">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="240" id="ao4-gC-VTs">
+                                <variation key="widthClass=compact" constant="50"/>
+                            </constraint>
+                            <constraint firstAttribute="height" constant="50" id="sYV-ys-3EC"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ao4-gC-VTs"/>
+                                <exclude reference="sYV-ys-3EC"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="ao4-gC-VTs"/>
+                                <include reference="sYV-ys-3EC"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lvc-Wr-pTU">
+                        <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="42" id="6Dx-RY-joI"/>
+                            <constraint firstAttribute="height" constant="21" id="mzR-IX-7CP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="6Dx-RY-joI"/>
+                                <exclude reference="mzR-IX-7CP"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="6Dx-RY-joI"/>
+                                <include reference="mzR-IX-7CP"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTf-T0-pLk">
+                        <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="42" id="22k-4N-yub">
+                                <variation key="widthClass=compact" constant="200"/>
+                            </constraint>
+                            <constraint firstAttribute="height" constant="21" id="veB-1x-bQP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="22k-4N-yub"/>
+                                <exclude reference="veB-1x-bQP"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="22k-4N-yub"/>
+                                <include reference="veB-1x-bQP"/>
+                            </mask>
+                        </variation>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="J7c-Qc-eVI" firstAttribute="leading" secondItem="50Y-lo-mbr" secondAttribute="leading" constant="5" id="1Zg-vg-Kdz"/>
+                    <constraint firstItem="lvc-Wr-pTU" firstAttribute="centerY" secondItem="J7c-Qc-eVI" secondAttribute="centerY" id="Oz6-dF-6Bi"/>
+                    <constraint firstItem="OTf-T0-pLk" firstAttribute="centerY" secondItem="lvc-Wr-pTU" secondAttribute="centerY" id="cYR-TO-7ej"/>
+                    <constraint firstItem="J7c-Qc-eVI" firstAttribute="top" secondItem="50Y-lo-mbr" secondAttribute="top" constant="10" id="jWh-Zz-UHY"/>
+                    <constraint firstItem="lvc-Wr-pTU" firstAttribute="leading" secondItem="J7c-Qc-eVI" secondAttribute="trailing" constant="22" id="vVz-Ra-BUc"/>
+                    <constraint firstItem="OTf-T0-pLk" firstAttribute="leading" secondItem="lvc-Wr-pTU" secondAttribute="trailing" constant="25" id="xT2-fO-2s7"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="subviews">
+                        <exclude reference="J7c-Qc-eVI"/>
+                        <exclude reference="lvc-Wr-pTU"/>
+                        <exclude reference="OTf-T0-pLk"/>
+                    </mask>
+                    <mask key="constraints">
+                        <exclude reference="1Zg-vg-Kdz"/>
+                        <exclude reference="jWh-Zz-UHY"/>
+                        <exclude reference="Oz6-dF-6Bi"/>
+                        <exclude reference="vVz-Ra-BUc"/>
+                        <exclude reference="cYR-TO-7ej"/>
+                        <exclude reference="xT2-fO-2s7"/>
+                    </mask>
+                </variation>
+                <variation key="widthClass=compact">
+                    <mask key="subviews">
+                        <include reference="J7c-Qc-eVI"/>
+                        <include reference="lvc-Wr-pTU"/>
+                        <include reference="OTf-T0-pLk"/>
+                    </mask>
+                    <mask key="constraints">
+                        <include reference="1Zg-vg-Kdz"/>
+                        <include reference="jWh-Zz-UHY"/>
+                        <include reference="Oz6-dF-6Bi"/>
+                        <include reference="vVz-Ra-BUc"/>
+                        <include reference="cYR-TO-7ej"/>
+                        <include reference="xT2-fO-2s7"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageview" destination="J7c-Qc-eVI" id="y18-oe-7fW"/>
+                <outlet property="number" destination="OTf-T0-pLk" id="zgl-RU-PrZ"/>
+                <outlet property="textmessage" destination="lvc-Wr-pTU" id="eqk-7M-3tY"/>
+            </connections>
+            <point key="canvasLocation" x="-203.5" y="250"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,92 @@
+[
+      {
+            "title": "篝火",
+            "icon": "篝火",
+            "audio":"篝火.mp3",
+            "volume": 5
+      },
+      {
+            "title": "风铃",
+            "icon": "风铃",
+            "audio":"风铃.mp3",
+            "volume": 5
+      },
+      {
+            "title": "海浪",
+            "icon": "海浪",
+            "audio":"海浪.mp3",
+            "volume": 5
+      },
+      {
+            "title": "狗叫",
+            "icon": "狗叫",
+            "audio":"狗叫.mp3",
+            "volume": 5
+      },
+      {
+            "title": "火车",
+            "icon": "火车",
+            "audio":"火车.wav",
+            "volume": 5
+      },
+      {
+            "title": "鲸鱼",
+            "icon": "鲸鱼",
+            "audio":"鲸鱼.mp3",
+            "volume": 5
+      },
+      {
+            "title": "警报",
+            "icon": "警报",
+            "audio":"警报.mp3",
+            "volume": 5
+      },
+      {
+            "title": "机枪",
+            "icon": "机枪",
+            "audio":"机枪.mp3",
+            "volume": 5
+      },
+      {
+            "title": "雷雨",
+            "icon": "雷雨",
+            "audio":"雷雨.wav",
+            "volume": 5
+      },
+      {
+            "title": "鸟叫",
+            "icon": "鸟叫",
+            "audio":"鸟叫.mp3",
+            "volume": 5
+      },
+      {
+            "title": "森林",
+            "icon": "森林",
+            "audio":"森林.mp3",
+            "volume": 5
+      },
+      {
+            "title": "小溪",
+            "icon": "小溪",
+            "audio":"小溪.mp3",
+            "volume": 5
+      },
+      {
+            "title": "夜晚",
+            "icon": "夜晚",
+            "audio":"夜晚.mp3",
+            "volume": 5
+      },
+      {
+            "title": "雨天",
+            "icon": "雨天",
+            "audio":"雨天.mp3",
+            "volume": 5
+      },
+      {
+            "title": "钟声",
+            "icon": "钟声",
+            "audio":"钟声.mp3",
+            "volume": 5
+      }
+]

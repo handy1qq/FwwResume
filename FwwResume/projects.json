@@ -1,0 +1,14 @@
+[
+    {
+         "title": "日记本",
+         "id": "com.netease.iphonereader",
+         "icon": "diary",
+         "SBName": "notes"
+    },
+     {
+         "title": "禅意音乐",
+         "id": "com.netease.video",
+         "icon": "music2",
+         "SBName": "music"
+     },
+ ]

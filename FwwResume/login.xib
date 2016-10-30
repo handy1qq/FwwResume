@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HeadCell" rowHeight="86" id="F8e-0p-s2I" customClass="FwwLoginViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="380" height="86"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="F8e-0p-s2I" id="Egh-6y-wBd">
+                <rect key="frame" x="0.0" y="0.0" width="380" height="85.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3gQ-6B-yHU">
+                        <rect key="frame" x="0.0" y="-21" width="240" height="128"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="Vmy-uP-CLi">
+                                <variation key="widthClass=compact" constant="70"/>
+                            </constraint>
+                            <constraint firstAttribute="width" constant="35" id="dWb-f7-LSd">
+                                <variation key="widthClass=compact" constant="70"/>
+                            </constraint>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Vmy-uP-CLi"/>
+                                <exclude reference="dWb-f7-LSd"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="Vmy-uP-CLi"/>
+                                <include reference="dWb-f7-LSd"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="登录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="00w-m9-Dh3">
+                        <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="41" id="CHX-r0-E8f"/>
+                            <constraint firstAttribute="width" constant="125" id="oNe-gi-Ngp"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="CHX-r0-E8f"/>
+                                <exclude reference="oNe-gi-Ngp"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="CHX-r0-E8f"/>
+                                <include reference="oNe-gi-Ngp"/>
+                            </mask>
+                        </variation>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="00w-m9-Dh3" firstAttribute="leading" secondItem="3gQ-6B-yHU" secondAttribute="trailing" constant="25" id="FFM-v1-MeN"/>
+                    <constraint firstItem="00w-m9-Dh3" firstAttribute="centerY" secondItem="3gQ-6B-yHU" secondAttribute="centerY" id="UHw-3X-lcz"/>
+                    <constraint firstAttribute="bottom" secondItem="3gQ-6B-yHU" secondAttribute="bottom" constant="10" id="dwL-aE-09v"/>
+                    <constraint firstItem="00w-m9-Dh3" firstAttribute="top" secondItem="Egh-6y-wBd" secondAttribute="top" constant="24" id="gMU-Pf-eIJ"/>
+                    <constraint firstItem="3gQ-6B-yHU" firstAttribute="leading" secondItem="Egh-6y-wBd" secondAttribute="leading" constant="5" id="nrv-5V-ITm"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="subviews">
+                        <exclude reference="00w-m9-Dh3"/>
+                    </mask>
+                    <mask key="constraints">
+                        <exclude reference="dwL-aE-09v"/>
+                        <exclude reference="nrv-5V-ITm"/>
+                        <exclude reference="FFM-v1-MeN"/>
+                        <exclude reference="UHw-3X-lcz"/>
+                        <exclude reference="gMU-Pf-eIJ"/>
+                    </mask>
+                </variation>
+                <variation key="widthClass=compact">
+                    <mask key="subviews">
+                        <include reference="00w-m9-Dh3"/>
+                    </mask>
+                    <mask key="constraints">
+                        <include reference="dwL-aE-09v"/>
+                        <include reference="nrv-5V-ITm"/>
+                        <include reference="FFM-v1-MeN"/>
+                        <include reference="UHw-3X-lcz"/>
+                        <exclude reference="gMU-Pf-eIJ"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageview" destination="3gQ-6B-yHU" id="NJu-4h-vD4"/>
+                <outlet property="userName" destination="00w-m9-Dh3" id="ANw-VX-D0L"/>
+            </connections>
+            <point key="canvasLocation" x="272" y="288"/>
+        </tableViewCell>
+    </objects>
+</document>
